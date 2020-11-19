@@ -1,0 +1,182 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "test1",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 29,
+        "min_value": 24
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_column_count_to_equal",
+      "kwargs": {
+        "value": 3
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "processed_dttm",
+          "size",
+          "f0_"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "size",
+        "mostly": 0.863
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "size",
+        "max_value": 16681006132008,
+        "min_value": 16681006132006
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "size",
+        "max_value": 22526579844961,
+        "min_value": 22526579844959
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "size",
+        "max_value": 19357612468545.656,
+        "min_value": 19357612468543.656
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "size",
+        "max_value": 17901769525699.5,
+        "min_value": 17901769525697.5
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": false,
+        "column": "size",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              16772711781428,
+              16772711781430
+            ],
+            [
+              17257101300259,
+              17257101300261
+            ],
+            [
+              17848850562808,
+              17848850562810
+            ],
+            [
+              21644946040228,
+              21644946040230
+            ],
+            [
+              22401260897398,
+              22401260897400
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "processed_dttm"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "processed_dttm",
+        "max_value": "2022-11-16 17:01:46.764106+00:00",
+        "min_value": "2019-10-23 05:59:06.205678+00:00",
+        "parse_strings_as_datetimes": true
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "BasicSuiteBuilderProfiler": {
+      "batch_kwargs": {
+        "bigquery_temp_table": "tokopedia-staging-198806.aldous_test.ge_tmp",
+        "data_asset_name": "datalake_cdc_daily_size",
+        "datasource": "tokopedia-staging-198806",
+        "limit": 1000,
+        "schema": null,
+        "table": "datalake_cdc_daily_size"
+      },
+      "created_at": 1605600064.5320365,
+      "created_by": "BasicSuiteBuilderProfiler"
+    },
+    "citations": [
+      {
+        "batch_kwargs": {
+          "bigquery_temp_table": "tokopedia-staging-198806.aldous_test.ge_tmp",
+          "data_asset_name": "datalake_cdc_daily_size",
+          "datasource": "tokopedia-staging-198806",
+          "limit": 1000,
+          "schema": null,
+          "table": "datalake_cdc_daily_size"
+        },
+        "batch_markers": {
+          "ge_load_time": "20201117T080021.630418Z"
+        },
+        "batch_parameters": null,
+        "citation_date": "20201117T080113.812902Z",
+        "comment": "BasicSuiteBuilderProfiler added a citation based on the current batch."
+      }
+    ],
+    "columns": {
+      "f0_": {
+        "description": ""
+      },
+      "processed_dttm": {
+        "description": ""
+      },
+      "size": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.12.8",
+    "notes": {
+      "content": [
+        "#### This is an _example_ suite\n\n- This suite was made by quickly glancing at 1000 rows of your data.\n- This is **not a production suite**. It is meant to show examples of expectations.\n- Because this suite was auto-generated using a very basic profiler that does not know your data like you do, many of the expectations may not be meaningful.\n"
+      ],
+      "format": "markdown"
+    }
+  }
+}

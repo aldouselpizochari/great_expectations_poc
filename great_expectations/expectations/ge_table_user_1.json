@@ -1,0 +1,240 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "ge_table_user_1",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 5498,
+        "min_value": 4499
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_column_count_to_equal",
+      "kwargs": {
+        "value": 12
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "primary_key_id",
+          "foreign_key_id",
+          "name",
+          "email",
+          "address",
+          "birthdate"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "primary_key_id"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "primary_key_id"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "foreign_key_id"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_distinct_values_to_be_in_set",
+      "kwargs": {
+        "column": "foreign_key_id",
+        "value_set": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "name"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_value_lengths_to_be_between",
+      "kwargs": {
+        "column": "name",
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "email"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "email"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_value_lengths_to_be_between",
+      "kwargs": {
+        "column": "email",
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "address"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "address"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_value_lengths_to_be_between",
+      "kwargs": {
+        "column": "address",
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "birthdate"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "birthdate"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_value_lengths_to_be_between",
+      "kwargs": {
+        "column": "birthdate",
+        "min_value": 1
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "BasicSuiteBuilderProfiler": {
+      "batch_kwargs": {
+        "bigquery_temp_table": "tokopedia-staging-198806.aldous_test.tmp_ge_table_user_2",
+        "data_asset_name": "ge_table_user_2",
+        "datasource": "tokopedia-staging-198806",
+        "schema": null,
+        "table": "ge_table_user_2"
+      },
+      "created_at": 1605696032.4678576,
+      "created_by": "BasicSuiteBuilderProfiler"
+    },
+    "citations": [
+      {
+        "batch_kwargs": {
+          "bigquery_temp_table": "tokopedia-staging-198806.aldous_test.tmp_ge_table_user_2",
+          "data_asset_name": "ge_table_user_2",
+          "datasource": "tokopedia-staging-198806",
+          "schema": null,
+          "table": "ge_table_user_2"
+        },
+        "batch_markers": {
+          "ge_load_time": "20201118T103703.916776Z"
+        },
+        "batch_parameters": null,
+        "citation_date": "20201118T104159.270371Z",
+        "comment": "BasicSuiteBuilderProfiler added a citation based on the current batch."
+      }
+    ],
+    "columns": {
+      "address": {
+        "description": ""
+      },
+      "birthdate": {
+        "description": ""
+      },
+      "email": {
+        "description": ""
+      },
+      "foreign_key_id": {
+        "description": ""
+      },
+      "height": {
+        "description": ""
+      },
+      "is_validated": {
+        "description": ""
+      },
+      "ktp_id": {
+        "description": ""
+      },
+      "location_id": {
+        "description": ""
+      },
+      "name": {
+        "description": ""
+      },
+      "phone_number": {
+        "description": ""
+      },
+      "primary_key_id": {
+        "description": ""
+      },
+      "processed_dttm": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.12.8",
+    "notes": {
+      "content": [
+        "_To add additional notes, edit the <code>meta.notes.content</code> field in the appropriate Expectation json file._"
+      ],
+      "format": "markdown"
+    }
+  }
+}
